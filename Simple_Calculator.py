@@ -1,29 +1,26 @@
-print("What do you want ?")
+print("What do you want to do ?")
 print("Type A for Additon")
 print("Type S for Subtraction")
 print("Type M for Multiplication")
 print("Type D for Division")
 print("Type AREA for Area of a Circle")
 
-arithmetic = input("Type now: ").upper()
+operation = input("Type now: ").upper()
 
-if arithmetic != "AREA":
-   x = int(input("Input X: "))
-   y = int(input("Input Y: "))
+if operation != "AREA":
+   x = float(input("Input X: "))
+   y = float(input("Input Y: "))
 else:
      z = float(input("Input the radius: "))
      area = (3.14*z*z)
      print (area)
 
 
-if arithmetic == "A":
+if operation == "A":
     print(x+y)
-if arithmetic == "S":
+elif operation == "S":
     print(x-y)
-if arithmetic == "M":
+elif operation == "M":
     print(x*y)
-if arithmetic == "D":
+elif operation == "D":
     print(x/y)
-
-
-    
