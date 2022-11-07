@@ -5,9 +5,11 @@ print("Type M for Multiplication")
 print("Type D for Division")
 print("Type AREA for Area of a Circle")
 
-x = int(input("Input X: "))
-y = int(input("Input Y: "))
 
+if arithmetic != "AREA":
+   x = int(input("Input X: "))
+   y = int(input("Input Y: "))
+elif
 
 arithmetic = input("Type now: ").upper()
 if arithmetic == "A":
